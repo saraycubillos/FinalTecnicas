@@ -17,17 +17,17 @@
         <div class="container">
             <form action="TotalTaquilla.jsp" method="post">
                 <div class="mb-3">
-                    Tipo de público <select name="selectPub">
+                    Tipo de público: <select name="selectPub">
                         <option value="infantil">Infantil</option>
                         <option value="Todo publico">Para todo público</option>
                         <option value="juvenil">Juvenil</option>
                     </select><br>
                 </div>
                 <div class="mb-3">
-                    Sala <select name="selectSala">
-                        <option value="infantil">1</option>
-                        <option value="Todo publico">2</option>
-                        <option value="juvenil">3</option>
+                    Sala: <select name="selectSala">
+                        <option value="una">una</option>
+                        <option value="dos">dos</option>
+                        <option value="tres">tres</option>
                     </select><br>
                 </div>
                 <div class="mb-3">
@@ -38,9 +38,9 @@
                 </div>
                 <div class="mb-3">
                     Precio: <select name="selectPrecio">
-                        <option value="infantil">10</option>
-                        <option value="Todo publico">15</option>
-                        <option value="juvenil">8</option>
+                        <option value="Diez">10</option>
+                        <option value="Quince">15</option>
+                        <option value="Ocho">8</option>
                     </select><br>
                 </div>
                 <div class="mb-3">

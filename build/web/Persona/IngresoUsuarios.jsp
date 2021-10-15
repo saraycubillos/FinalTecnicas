@@ -12,15 +12,21 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Taquilla recaudada</h1>
+        <h1>Ingreso de usuario</h1>
         <% 
             String nombre = request.getParameter("txtNom");
             String apellido = request.getParameter("txtApe");
             int edad = Integer.parseInt(request.getParameter("txtEdad"));
             %>
+            <div class="mb-3">
+                    Nombre:<%=nombre%><br>
+            </div>
+            <div class="mb-3">
+                    Apellido:<%=apellido%><br>
+            </div>
+            <div class="mb-3">
+                    Edad:<%=edad%><br>
+            </div>
             
-            Tipo de público:<%=nombre%><br>
-            Sala:<%=apellido%><br>
-            Nombre película:<%=edad%><br>
     </body>
 </html>
