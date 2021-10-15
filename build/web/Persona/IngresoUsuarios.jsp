@@ -28,7 +28,7 @@
                     Edad:<%=edad%><br>
             </div>
             <a href="CrearUsuario.jsp">
-                Volver a principal
+                Volver a creación de 
             </a>
     </body>
 </html>
