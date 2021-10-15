@@ -24,11 +24,7 @@
                     </select><br>
                 </div>
                 <div class="mb-3">
-                    Sala: <select name="selectSala">
-                        <option value="una">una</option>
-                        <option value="dos">dos</option>
-                        <option value="tres">tres</option>
-                    </select><br>
+                    Sala: <input type="text" name="txtSala"><br>
                 </div>
                 <div class="mb-3">
                     Nombre de película: <input type="text" name="txtPelicula"><br>
@@ -37,11 +33,7 @@
                     Horario: <input type="text" name="txtHorario"><br>
                 </div>
                 <div class="mb-3">
-                    Precio: <select name="selectPrecio">
-                        <option value="Diez">10</option>
-                        <option value="Quince">15</option>
-                        <option value="Ocho">8</option>
-                    </select><br>
+                    Precio: <input type="text" name="txtPrecio"><br>
                 </div>
                 <div class="mb-3">
                     <input type="submit" name="btn1" value="Enviar Datos">

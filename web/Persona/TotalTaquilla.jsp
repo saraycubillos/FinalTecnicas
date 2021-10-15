@@ -4,6 +4,7 @@
     Author     : USER
 --%>
 
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,13 +17,17 @@
         <h1>DATOS DE VENTA</h1>
         <% 
             String publico = request.getParameter("selectPub");
-            int sala = Integer.parseInt(request.getParameter("selectSala"));
+            int sala = Integer.parseInt(request.getParameter("txtSala"));
             String nom = request.getParameter("txtPelicula");
             int horario = Integer.parseInt(request.getParameter("txtHorario"));
-            int precio = Integer.parseInt(request.getParameter("selectPrecio"));
+            int precio = Integer.parseInt(request.getParameter("txtPrecio"));
                 
-            int sumaTotal = 0;
-            sumaTotal = sumaTotal + precio;     
+            int recaudoTotal = 0;
+            ArrayList<Integer> a = new ArrayList(); 
+            a.add(precio);
+            for(int i =0; i<a.size();i++){
+                recaudoTotal += a.get(i);
+            }
             %>
             
             Tipo de público:<%=publico%><br>
@@ -31,8 +36,10 @@
             Horario:<%=horario%><br>
             Precio:<%=precio%><br>
             
-            Total:<%=sumaTotal%><br>
+            Total:<%=recaudoTotal%><br>
             
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <a href="CrearVenta.jsp">
+                Volver a principal
+            </a>
     </body>
 </html>
