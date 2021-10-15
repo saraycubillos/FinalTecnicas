@@ -37,8 +37,8 @@
                         <td><c:out value="${persona.nombre}" /></td>
                         <td><c:out value="${persona.apellido}" /></td>
                         <td><c:out value="${persona.edad}" /></td>
-                        <td><a href="PersonaControlador?=modificar&id=<c:out value="${persona.id}" />"Modificar</a></td>
-                        <td><a href="PersonaControlador?=eliminar&id=<c:out value="${persona.id}" />"Modificar</a></td>
+                        <td><a href="PersonaControlador?=modificar&id=<c:out value="${persona.id}"/>"Modificar></a></td>
+                        <td><a a href="PersonaControlador?=eliminar&id=<c:out value="${persona.id}"/>"Eliminar></a></td>
                         
                         
                     </tr>

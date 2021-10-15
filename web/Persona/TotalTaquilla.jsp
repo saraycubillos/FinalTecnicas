@@ -16,8 +16,8 @@
     <body>
         <h1>DATOS DE VENTA</h1>
         <% 
-            String publico = request.getParameter("selectPub");
-            int sala = Integer.parseInt(request.getParameter("txtSala"));
+            String publico = request.getParameter("selectPub");   //Codigo java
+            int sala = Integer.parseInt(request.getParameter("txtSala")); //Request me permite recibir el dato que se ingreso
             String nom = request.getParameter("txtPelicula");
             int horario = Integer.parseInt(request.getParameter("txtHorario"));
             int precio = Integer.parseInt(request.getParameter("txtPrecio"));
@@ -30,13 +30,13 @@
             }
             %>
             
-            Tipo de público:<%=publico%><br>
-            Sala:<%=sala%><br>
-            Nombre película:<%=nom%><br>
-            Horario:<%=horario%><br>
-            Precio:<%=precio%><br>
+            Tipo de público:<%= publico%><br>
+            Sala:<%= sala%><br>
+            Nombre película:<%= nom%><br>
+            Horario:<%= horario%><br>
+            Precio:<%= precio%><br>
             
-            Total:<%=recaudoTotal%><br>
+            Total:<%= recaudoTotal%><br>
             
             <a href="CrearVenta.jsp">
                 Volver a principal

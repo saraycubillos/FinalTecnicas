@@ -18,21 +18,21 @@
         <form action="PersonaControlador?accion=actualizar" methods="POST" autocomplete="off"></form>
       
             
-        <input id="id" name="id" type="hidden" value="<c:out value="${producto.id}"/>" />
+        <input id="id" name="id" type="hidden" value="<c:out value="${persona.id}"/>" />
             
             <p>
                 Nombre:
-                <input id="id" name="nombre" type="text" value="<c:out value="${producto.nombre}"/>" />
+                <input id="id" name="nombre" type="text" value="<c:out value="${persona.nombre}"/>" />
             </p>
             
             <p>
                 Apellido:
-                <input id="apellido" name="apellido" type="text" value="<c:out value="${producto.apellido}"/>" />
+                <input id="apellido" name="apellido" type="text" value="<c:out value="${persona.apellido}"/>" />
             </p>
             
             <p>
                 Edad:
-                <input id="edad" name="edad" type="text" value="<c:out value="${producto.edad}"/>" />
+                <input id="edad" name="edad" type="text" value="<c:out value="${persona.edad}"/>" />
             </p>
             
             <button id="guardar" name="guardar" type="submit">Guardar</button>

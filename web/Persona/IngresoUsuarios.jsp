@@ -14,7 +14,7 @@
     <body>
         <h1>Ingreso de usuario</h1>
         <% 
-            String nombre = request.getParameter("txtNom");
+            String nombre = request.getParameter("txtNom"); //Codigo java
             String apellido = request.getParameter("txtApe");
             int edad = Integer.parseInt(request.getParameter("txtEdad"));
             %>
@@ -27,6 +27,8 @@
             <div class="mb-3">
                     Edad:<%=edad%><br>
             </div>
-            
+            <a href="CrearUsuario.jsp">
+                Volver a principal
+            </a>
     </body>
 </html>

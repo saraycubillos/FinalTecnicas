@@ -36,10 +36,10 @@ public class PersonaControlador extends HttpServlet {
         String accion;
         RequestDispatcher dispatcher = null;
         
-        accion = request.getParameter("accion");
+        accion = request.getParameter("accion"); //Recibir el parametro
         
         if(accion == null || accion.isEmpty()){
-            dispatcher = request.getRequestDispatcher("Persona/index.jsp");
+            dispatcher = request.getRequestDispatcher("Persona/index.jsp"); //RequestDispatcher es el servidor internamente quien solicita el recurso al que nos redirigimos 
             List <PersonaDTO> listaPersona = personaDAO.listarPersonas();
             request.setAttribute("lista", listaPersona);
         }else if("nuevo".equals(accion)){

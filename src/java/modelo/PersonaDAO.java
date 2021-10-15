@@ -26,7 +26,7 @@ public class PersonaDAO{
     public List<PersonaDTO> listarPersonas(){
         
         PreparedStatement ps;  // Establecer la conexion entre java y MySQL
-        ResultSet rs;
+        ResultSet rs; //contiene los resultados de una consulta SQL
         
         List<PersonaDTO> lista = new ArrayList<>();
         
@@ -62,7 +62,7 @@ public class PersonaDAO{
         try{
             ps = conexion.prepareStatement("SELECT id, nombre, apellido, edad FROM persona WHERE id=?"); //Where especifica criterios que tienen que cumplir los valores de campo y debemos agregar (id)
             ps.setInt(1, _id); //Es la posicion 1 porque es lo primero que ingresa la persona antes de nombre ....
-            rs = ps.executeQuery();
+            rs = ps.executeQuery(); //Si la sentencia SQL es una Consulta, entoces se utiliza el método executeQuery
             
             while(rs.next()){
                 
@@ -90,7 +90,8 @@ public class PersonaDAO{
             ps.setString(1, persona.getNombre());
             ps.setString(2, persona.getApellido());
             ps.setInt(3, persona.getEdad());
-            ps.execute();
+            ps.execute(); //Ejecuta la instrucción SQL especificada, que puede devolver varios resultados, e indica al Controlador Microsoft JDBC para SQL Server que las claves 
+            //que se han generado automáticamente y están presentes en la matriz dada deben estar disponibles para su recuperación.
             return true;
             
         }catch(SQLException e){
